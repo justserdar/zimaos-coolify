@@ -62,6 +62,7 @@ install_configure_ssh() {
     chmod 700 /DATA/.ssh
 
     # Mount the writable directory to ~/.ssh (if necessary)
+    # ^ this will reset on reboots since it is not persistent
     if [ ! -d ~/.ssh ] || [ "$(mountpoint -q ~/.ssh && echo mounted)" != "mounted" ]; then
         echo "Mounting writable SSH directory to ~/.ssh..."
         mkdir -p ~/.ssh
@@ -69,12 +70,14 @@ install_configure_ssh() {
     fi
 
     # Add public key to authorized_keys
+    # ^ this doesnt work on ZimaOS: 'Read-only file system'
     echo "Adding your public key to authorized_keys..."
     read -p "Enter your public SSH key: " ssh_key
     echo "$ssh_key" >> /DATA/.ssh/authorized_keys
     chmod 600 /DATA/.ssh/authorized_keys
 
     # Restart SSH service
+    # ^ this doesnt work on ZimaOS: 'Extra argument "restart" in sshd command'
     echo "Restarting SSH service..."
     /usr/sbin/sshd -t && /usr/sbin/sshd restart
     echo -e "${GREEN}SSH configured successfully!${NC}"
@@ -82,14 +85,14 @@ install_configure_ssh() {
 
 clear_cache() {
     echo "Clearing Coolify cache..."
-    docker exec -it big-bear-coolify php artisan optimize
+    docker exec -it zimaos-coolify php artisan optimize
     echo -e "${GREEN}Cache cleared successfully!${NC}"
 }
 
 menu() {
     # Main menu
     clear
-    print_header "BigBearCasaOS Coolify Setup V0.0.1"
+    print_header "ZimaOS Coolify Setup V0.0.1"
 
     echo "Here are some links:"
     echo "https://community.bigbeartechworld.com"
