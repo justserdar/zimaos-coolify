@@ -79,6 +79,7 @@ services:
     # Mount necessary volumes for accessing system information
     volumes:
       # ssh-keygen -f /DATA/AppData/big-bear-coolify/ssh/keys/id.root@host.docker.internal -t ed25519 -N '' -C root@coolify
+      # Find out what this is doing ^^^
       - /DATA/AppData/$AppID/ssh:/var/www/html/storage/app/ssh
       - /DATA/AppData/$AppID/applications:/var/www/html/storage/app/applications
       - /DATA/AppData/$AppID/databases:/var/www/html/storage/app/databases
@@ -420,7 +421,7 @@ x-casaos:
   architectures:
     - amd64
     - arm64
-  main: zimaos-coolify
+  main: Coolify
   description:
     en_us: Coolify is a self-hosted web application that allows you to manage your servers, applications, and services. It provides a simple and intuitive interface for managing your infrastructure, making it easy to deploy and manage your applications. With Coolify, you can easily manage your servers, applications, and services, providing a streamlined experience for managing your infrastructure.
   tagline:
