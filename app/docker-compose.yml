@@ -428,7 +428,7 @@ x-casaos:
     en_us: Coolify
   developer: "coollabsio" # Developer of coolify
   author: "JustSerdar" # Author of the docker compose
-  icon: "https://cdn.jsdelivr.net/gh/bigbeartechworld/big-bear-casaos/Apps/coolify/logo.png"
+  icon: "https://raw.githubusercontent.com/justserdar/zimaos-coolify/refs/heads/main/app/logo.png"
   thumbnail: ""
   title:
     en_us: Coolify
