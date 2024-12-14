@@ -16,5 +16,9 @@ Coolify is an all-in one PaaS that helps you to self-host your own applications,
 5. Click on `Install` in the open window.
 
 
+## Known issue's
+- Title and icon are not updating properly.
+It seems to prefix or default your app title and icon url with `https://cdn.jsdelivr.net/gh/IceWhaleTech/CasaOS-AppStore@main/Apps/` which is not valid.
+
 
 

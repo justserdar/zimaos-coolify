@@ -1,9 +1,9 @@
 # Configuration for coolify setup
 
-# Name of the big-bear-coolify application
-name: zimaos-coolify
+# Name of the zimaos-coolify application
+name: Coolify
 
-# Service definitions for the big-bear-coolify application
+# Service definitions for the zimaos-coolify application
 services:
   # Service name: zimaos-coolify
   # The `zimaos-coolify` service definition
@@ -12,7 +12,7 @@ services:
     container_name: zimaos-coolify
 
     # Image to be used for the container specifies the fastfetch version and source
-    image: ghcr.io/coollabsio/coolify:4.0.0-beta.367
+    image: ghcr.io/coollabsio/coolify:4.0.0-beta.379
 
     # Container restart policy - restarts the container unless manually stopped
     restart: unless-stopped
@@ -432,6 +432,7 @@ x-casaos:
   thumbnail: ""
   title:
     en_us: Coolify
+    custom: Coolify
   category: SelfHost
   port_map: "8000"
   # Tips
