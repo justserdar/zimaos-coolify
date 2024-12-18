@@ -2,7 +2,8 @@
 
 # Coolify for ZimaOS*
 
-## This is a learning repository, CasaOS and ZimaOS share the same App store, the efforts to make Coolify work as a one-click application
+## This is a learning repository, CasaOS and ZimaOS share the same App store, the efforts to make Coolify work as a one-click application on the ZimaCube will be consolidated and updated everywhere.
+Return here later for more updates about the progress, if you want to help, you can reproduce everything by following the below guide on the ZimaCube with ZimaOS.
 
 Coolify is an all-in one PaaS that helps you to self-host your own applications, databases or services (like Wordpress, Plausible Analytics, Ghost) without managing your servers and all the complexity that comes with it, it is also known as an open-source & self-hostable Heroku / Netlify / Vercel alternative.
 
