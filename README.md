@@ -28,8 +28,7 @@ It seems to prefix or default your app title and icon url with `https://cdn.jsde
 
 I would like to thank the team of Zima & IceWhale along with creators and contributors like HeyAndras and Dragonfire for all the work & guidance they provided during this learning journey.
 
-Visit [Zima](https://www.zimaspace.com/) to learn more about their amazing products. 
-Visit [Coolify](https://coolify.io/) to learn more about self host PaaS.
-Visit [Awesome CasaOS](https://awesome.casaos.io/content/3rd-party-app-stores/list.html) and this [repo](https://github.com/IceWhaleTech/CasaOS-AppStore) to learn how to create your own CasaOS App Store. 
-
-Visit the [Big Bear Community](https://community.bigbeartechworld.com/) and [repository](https://github.com/bigbeartechworld) to accelerate learning and building for CasaOS with dragonfire's vast collection.
+- Visit [Zima](https://www.zimaspace.com/) to learn more about their amazing products. 
+- Visit [Coolify](https://coolify.io/) to learn more about self host PaaS.
+- Visit [Awesome CasaOS](https://awesome.casaos.io/content/3rd-party-app-stores/list.html) and this [repo](https://github.com/IceWhaleTech/CasaOS-AppStore) to learn how to create your own CasaOS App Store. 
+- Visit the [Big Bear Community](https://community.bigbeartechworld.com/) and [repository](https://github.com/bigbeartechworld) to accelerate learning and building for CasaOS with dragonfire's vast collection.
